@@ -92,8 +92,9 @@
   .actionbar .deadline b{background:var(--chip); color:#3730a3}
 
   /* OVERVIEW */
-  .cols{display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:22px}
-  .cols p{margin:0 0 14px}
+  .prose{max-width:820px; margin-top:20px}
+  .prose p{margin:0 0 16px; font-size:1.06rem; color:var(--ink)}
+  .prose p:last-child{margin-bottom:0}
 
   /* TOPICS */
   .topics{display:flex; flex-wrap:wrap; gap:10px; margin-top:22px}
@@ -212,25 +213,10 @@
   <div class="wrap">
     <div class="eyebrow">About the Workshop</div>
     <h2>Overview</h2>
-    <div class="cols">
-      <div>
-        <p>Personalization is being rebuilt around generative models. Large language models,
-        retrieval-augmented generation, and agentic systems now shape how recommenders retrieve,
-        rank, explain, converse, and even simulate users — yet they also surface hard problems of
-        hallucination, control, evaluation, privacy, and fairness.</p>
-        <p>GRAIL 2026 brings together academic researchers and industry practitioners to advance
-        generative, retrieval-augmented, and agentic approaches to recommendation, while giving
-        equal attention to these open challenges and their long-term user impact.</p>
-      </div>
-      <div>
-        <p>The workshop is dedicated to generative recommender systems — methods that leverage
-        generative models for ranking, retrieval, planning, and explanation, as well as for
-        conversational agents, user simulation, and evaluation.</p>
-        <p>This theme is intrinsically tied to the core disciplines of CIKM: information retrieval,
-        knowledge management, and machine learning. GRAIL seeks to establish a rigorous research
-        agenda for generative personalization and a high-impact exchange between academia and industry
-        on responsible deployment and evaluation.</p>
-      </div>
+    <div class="prose">
+      <p>Personalization is being rebuilt around generative models. Large language models, retrieval-augmented generation, and agentic systems are transforming how recommender systems retrieve, rank, explain, converse with, and even simulate users — while surfacing hard new challenges around hallucination, controllability, evaluation, privacy, fairness, and long-term user impact.</p>
+      <p><strong>GRAIL 2026</strong> is a workshop at CIKM 2026 dedicated to generative recommender systems: methods that use generative models for retrieval, ranking, planning, and explanation, as well as for conversational agents, user simulation, and evaluation. It brings academic researchers and industry practitioners together to push these approaches forward while giving equal attention to their reliability, safety, and responsible deployment.</p>
+      <p>Whether you build, study, or deploy recommender systems, we invite you to take part. See the <a href="#cfp">Call for Papers</a> for topics and submission details, and join us in Rome on November 8, 2026.</p>
     </div>
   </div>
 </section>
@@ -338,7 +324,7 @@
     <div class="eyebrow">Get in touch</div>
     <h2>Contact</h2>
     <p class="lede">For questions about the workshop, please contact the organizers:
-    <a href="mailto:ashish.jain@airbnb.com">ashish.jain@airbnb.com</a> (Ashish Jain).</p>
+    <a href="mailto:ashish.jain@airbnb.com">ashish.jain@airbnb.com</a> (Ashish Jain, General Chair).</p>
   </div>
 </section>
 
@@ -351,20 +337,6 @@
     <a class="cikm-lockup" href="https://cikm2026.diag.uniroma1.it/" target="_blank" rel="noopener"><img class="cikm-logo" src="cikm2026-logo.png" alt="CIKM 2026" onerror="this.remove()"><span class="cikm-txt"><b>Co-located with CIKM 2026</b><br>35th ACM Int'l Conference on Information and Knowledge Management<br>Rome, Italy · November 7–11, 2026</span></a>
   </div>
 </footer>
-  
-<!-- Default Statcounter code for GRAIL 2026 https://grail2026.github.io/ -->
-<script type="text/javascript">
-var sc_project=13336030; 
-var sc_invisible=1; 
-var sc_security="b6944d8b"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/13336030/0/b6944d8b/1/" alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
 
 </body>
 </html>
