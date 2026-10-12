@@ -154,6 +154,23 @@
     color:#3730a3; background:var(--chip); border:1px solid #e0e7ff; padding:5px 14px; border-radius:999px}
   .paper .pdf:hover{text-decoration:none; filter:brightness(1.03)}
 
+  /* SCHEDULE */
+  .schedule{margin-top:24px; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:#fff; box-shadow:var(--shadow)}
+  .srow{display:grid; grid-template-columns:150px 1fr; gap:16px; padding:13px 20px; border-top:1px solid var(--line); align-items:start}
+  .srow:first-child{border-top:0}
+  .srow .t{font-weight:800; font-size:.92rem; color:#3730a3; white-space:nowrap; padding-top:1px}
+  .srow .c{font-size:.98rem; line-height:1.45}
+  .srow.head{background:var(--chip)}
+  .srow.head .c{font-weight:800; color:var(--ink)}
+  .srow.head .sub{display:block; color:var(--muted); font-weight:600; font-size:.88rem; margin-top:2px}
+  .srow.break{background:var(--bg-alt)}
+  .srow.break .c{font-weight:700; color:var(--muted)}
+  .srow.paper .c .pt{font-weight:700}
+  .srow.paper .c .pa{color:var(--muted); font-size:.9rem; margin-top:3px}
+  .srow .tag{display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.03em; color:#3730a3; background:#eef2ff; border:1px solid #e0e7ff; padding:1px 8px; border-radius:999px; margin-left:8px; vertical-align:middle}
+  .sched-note{color:var(--muted); font-size:.95rem; margin-top:14px}
+  @media (max-width:700px){ .srow{grid-template-columns:1fr; gap:6px} .srow .t{white-space:normal} }
+
   /* PROGRAM */
   .soon{margin-top:22px; background:#fff; border:1px dashed #c7d2fe; border-radius:var(--radius);
     padding:34px; text-align:center; color:var(--muted)}
@@ -413,11 +430,35 @@
   <div class="wrap">
     <div class="eyebrow">Schedule</div>
     <h2>Program</h2>
-    <div class="soon">
-      <div class="big">Program coming soon</div>
-      <p>GRAIL 2026 is a half-day, in-person workshop featuring an invited keynote, peer-reviewed
-      paper presentations, a poster/demo session, and a moderated panel. The detailed schedule will be
-      posted after acceptance notifications.</p>
+    <p class="sched-note">Sunday, November 8, 2026 · 09:00–13:00 (Rome) · Half-day, in-person</p>
+    <div class="schedule">
+      <div class="srow"><div class="t">09:00–09:10</div><div class="c">Opening remarks &amp; workshop goals</div></div>
+
+      <div class="srow head"><div class="t">09:10–09:35</div><div class="c">Keynote 1 — Sudeep Das, DoorDash<span class="sub">20 min talk + 5 min Q&amp;A</span></div></div>
+
+      <div class="srow head"><div class="t">09:35–10:20</div><div class="c">Paper Session 1 — Long Papers<span class="sub">12 min presentation + 3 min Q&amp;A each</span></div></div>
+      <div class="srow paper"><div class="t">09:35–09:50</div><div class="c"><div class="pt">When Do Graphs Beat Text? Knowledge-Graph Embeddings as a Content-Free Candidate-Generation Substrate for Recommendation<span class="tag">Long</span></div><div class="pa">Karima Boutalbi, Rim Hantach, Olivier Le Van, Rafika Boutalbi</div></div></div>
+      <div class="srow paper"><div class="t">09:50–10:05</div><div class="c"><div class="pt">A Technique to Model Product Information and User Reviews (MPIUR)<span class="tag">Long</span></div><div class="pa">Emna Belguith, Fajrian Yunus, Talel Abdessalem</div></div></div>
+      <div class="srow paper"><div class="t">10:05–10:20</div><div class="c"><div class="pt">SIFT: Search Intent-to-Filter Transformer for Multi-Task Personalized Filter Ranking at Airbnb<span class="tag">Long</span></div><div class="pa">Shashank Dabriwal, Tanya Piplani, Hao Li, Yiwei Wang, Ashish Jain, Kedar Bellare, Stephanie Moyerman</div></div></div>
+
+      <div class="srow head"><div class="t">10:20–10:40</div><div class="c">Paper Session 2 — Short Papers<span class="sub">8 min presentation + 2 min Q&amp;A each</span></div></div>
+      <div class="srow paper"><div class="t">10:20–10:30</div><div class="c"><div class="pt">SCOUT: Supply-Aware Cold-Start Proactive Query Suggestion for Travel Search<span class="tag">Short</span></div><div class="pa">Hao Li, Shashank Reddy, Kedar Bellare, Ashish Jain, Stephanie Moyerman</div></div></div>
+      <div class="srow paper"><div class="t">10:30–10:40</div><div class="c"><div class="pt">PALATE: Pretrained Autoregressive LATent Embeddings<span class="tag">Short</span></div><div class="pa">Sizhang Zhao, Praveen Gondhi, Bin Li, Utsaw Kumar</div></div></div>
+
+      <div class="srow"><div class="t">10:40–10:45</div><div class="c">Buffer / transition</div></div>
+
+      <div class="srow break"><div class="t">10:45–11:30</div><div class="c">☕ Coffee break</div></div>
+
+      <div class="srow head"><div class="t">11:30–11:55</div><div class="c">Keynote 2 — Fabrizio Silvestri, Sapienza University of Rome<span class="sub">20 min talk + 5 min Q&amp;A</span></div></div>
+
+      <div class="srow head"><div class="t">11:55–12:30</div><div class="c">Paper Session 3 — Long &amp; Short Papers</div></div>
+      <div class="srow paper"><div class="t">11:55–12:10</div><div class="c"><div class="pt">OptiCover: A Scalable and Multi-Surface Framework for Cold-Start Visual Optimization under Semantic Constraints<span class="tag">Long</span></div><div class="pa">Guillaume Guy, Mihajlo Grbovic, Joe Mills, Selen Uguroglu, Liwei He, Pratiksha Kadam, Nalini Kartha, Qian Aria Li</div></div></div>
+      <div class="srow paper"><div class="t">12:10–12:20</div><div class="c"><div class="pt">From Head to Tail: LLM-Augmented Sequential Recommendation and Trade-off Optimization<span class="tag">Short</span></div><div class="pa">Adeep Hande, Shaghayegh Agah, Neeraj Sharma, Karina Halevy, Sardar Hamidian</div></div></div>
+      <div class="srow paper"><div class="t">12:20–12:30</div><div class="c"><div class="pt">Critiquing Helps, Robustly: A Stress-Tested Agentic RAG Recommender with LLM User Simulation<span class="tag">Short</span></div><div class="pa">Menon Bharath Sreekumar</div></div></div>
+
+      <div class="srow head"><div class="t">12:30–12:55</div><div class="c">Keynote 3 — Andreas Damianou, Spotify<span class="sub">20 min talk + 5 min Q&amp;A</span></div></div>
+
+      <div class="srow"><div class="t">12:55–13:00</div><div class="c">Closing remarks</div></div>
     </div>
   </div>
 </section>
